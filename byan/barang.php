@@ -13,7 +13,7 @@ if(isset($_GET['aksi'])){
     }elseif($_GET['aksi']=="hapus"){
         $hapus = mysqli_query($koneksi,"DELETE FROM barang WHERE id_barang='$_GET[id_barang]'");
         if($hapus){
-            header("Location: barang.php");
+            header("Location:barang.php");
         }
     }
 }
